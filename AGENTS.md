@@ -7,27 +7,6 @@ Trilingual (EN / ZH-Hans / HE) site for a China-Israel commercial advisory pract
 Buyer: Chinese companies establishing Israeli operations, or Israeli companies
 working with China.
 
-## Positioning (settled, do not relitigate)
-- The product is the synthesis: common-law legal training + Mandarin/Cantonese +
-  Hebrew + operating experience in both markets. Never structure the site by skill.
-- Not a law firm. Never use "legal advice", "representation", or "counsel".
-- Chinese copy: never 咨询, never machine-translated sentence structure.
-- No Torah/TorahPod content here. Range dilutes.
-
-## Tone
-- EN: direct, senior, short sentences. Default.
-- ZH: warm, credibility-first.
-- HE: professional, no fluff.
-
-## Visual
-Navy and white. No stock photos. Type-led.
-
-## Structure (fixed)
-/, /about, /services, /contact. No new routes without asking.
-
-## Learned
-(corrections go here, same session, every time)
-
 ## Positioning (single, settled - do not relitigate or widen)
 - ONE position: China-Israel supply chain and procurement. She runs the
   commercial interface between Chinese and Israeli companies: supplier and
@@ -46,11 +25,12 @@ Navy and white. No stock photos. Type-led.
 - Subsidiary establishment is framed as the later stage of a Chinese
   manufacturer's Israel journey, never as a standalone co-equal service.
 - Out of scope for this site: investment scouting, fund advisory, deal
-  sourcing. Do not add pages, sections, or copy for investor audiences.
+  sourcing. No Torah/TorahPod content - range dilutes. Do not add pages,
+  sections, or copy for investor audiences.
 - The moat, stated as fact not hype: native Mandarin and Cantonese, Hong Kong
   common-law legal training, fluent Hebrew, and hands-on supply chain and
   data operations inside Israeli companies. The combination is the product;
-  no page sells the skills separately.
+  no page sells the skills separately. Never structure the site by skill.
 - Proof register: concrete and qualitative. Supplier portfolio terms
   renegotiations, Mandarin manufacturer negotiations, inventory and
   procurement analytics, cross-border contract fluency from years in
@@ -63,6 +43,20 @@ Navy and white. No stock photos. Type-led.
   is a service to clients, not her identity.
 - Do not claim deep transfer-pricing or tax expertise. Claim level:
   "structuring and operations consultation".
+
+## Tone
+- EN: direct, senior, short sentences. Default.
+- ZH: warm, credibility-first.
+- HE: professional, no fluff.
+
+## Visual
+Navy and white. No stock photos. Type-led.
+
+## Structure (fixed)
+/, /about, /services, /contact. No new routes without asking.
+
+## Learned
+(corrections go here, same session, every time)
 
 ## Voice
 - Direct, concise, zero small talk. Front-load context in one line, then
