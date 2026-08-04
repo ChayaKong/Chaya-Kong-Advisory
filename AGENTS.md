@@ -18,7 +18,8 @@ working with China.
   - For Chinese manufacturers: entering and serving the Israeli market -
     local buyers, distribution, terms, and when traction justifies it,
     establishing an Israeli subsidiary (entity setup, banking and regulatory
-    navigation, introductions to licensed local professionals).
+    navigation, local representative, office and hiring support, and
+    introductions to licensed local professionals).
   - For Israeli companies: sourcing from and negotiating with China -
     supplier vetting, Mandarin negotiation, terms renegotiation, quality
     management, landed-cost and procurement analytics.
@@ -27,10 +28,11 @@ working with China.
 - Out of scope for this site: investment scouting, fund advisory, deal
   sourcing. No Torah/TorahPod content - range dilutes. Do not add pages,
   sections, or copy for investor audiences.
-- The moat, stated as fact not hype: native Mandarin and Cantonese, Hong Kong
-  common-law legal training, fluent Hebrew, and hands-on supply chain and
-  data operations inside Israeli companies. The combination is the product;
-  no page sells the skills separately. Never structure the site by skill.
+- The moat, stated as fact not hype: native English, Mandarin, and Cantonese,
+  Hong Kong common-law attorney experience, fluent Hebrew, and hands-on
+  supply chain and data operations inside Israeli companies. The combination
+  is the product; no page sells the skills separately. Never structure the
+  site by skill.
 - Proof register: concrete and qualitative. Supplier portfolio terms
   renegotiations, Mandarin manufacturer negotiations, inventory and
   procurement analytics, cross-border contract fluency from years in
@@ -57,6 +59,21 @@ Navy and white. No stock photos. Type-led.
 
 ## Learned
 (corrections go here, same session, every time)
+- 2026-08-04: ZH headline/subhead read as translated English (comma-heavy,
+  calque sentence structure) rather than native Chinese copywriting. Rewrite
+  in topic-comment structure, not literal English syntax.
+- 2026-08-04: the moat's native-language line must list English, Mandarin,
+  AND Cantonese (source: brandcopywrite/reference/chaya-core.md) - English
+  had been dropped from the site copy.
+- 2026-08-04: "Hong Kong common-law legal training" undersells it - she
+  practiced (trainee solicitor + Foreign Legal Consultant). Say "attorney
+  experience", not "training".
+- 2026-08-04: subsidiary paragraph (03) was legal/accounting-handoff only;
+  broadened to cover the business-ops services she also provides post-setup
+  (local representative, office, hiring, local data/contact infrastructure)
+  - still scoped to the existing manufacturer/subsidiary audience, no
+  investor-audience language (see out-of-scope line above, confirmed with
+  Chaya 2026-08-04 not to widen to investment-scouting audiences).
 
 ## Voice
 - Direct, concise, zero small talk. Front-load context in one line, then
@@ -74,3 +91,7 @@ Navy and white. No stock photos. Type-led.
   professional and direct, no marketing register.
 - CTA style: small specific ask (intro call), never urgency theatrics.
   Fees never appear on the site.
+
+## Outward-facing copy (brand voice, portfolio, client outreach)
+
+For ANY portfolio, cold outreach, pitch, or other client-facing writing, read `brandcopywrite/AGENTS.md` FIRST and follow it. This root file is the engineering context only.

@@ -44,10 +44,10 @@ const COPY: Record<Lang, Content> = {
     hero: {
       headline: "The other side of your supply chain is a black box.",
       subhead:
-        "I run the commercial interface between Chinese manufacturers and Israeli buyers — negotiation, pricing, terms, and quality management, backed by the data behind every procurement decision.",
+        "I run the commercial and operational interface between Chinese manufacturers and Israeli buyers — negotiation, pricing, terms, quality management, and the on-the-ground operations that keep an Israeli presence running, backed by the data behind every decision.",
       moat: [
-        "Native Mandarin and Cantonese",
-        "Hong Kong common-law legal training",
+        "Native English, Mandarin, and Cantonese",
+        "Hong Kong common-law attorney experience",
         "Fluent Hebrew",
         "Operating experience inside Israeli companies",
       ],
@@ -67,7 +67,7 @@ const COPY: Record<Lang, Content> = {
       {
         heading: "When it's time for a subsidiary",
         paragraph:
-          "Once a Chinese manufacturer has real traction in Israel, the next step is usually a local entity — for banking, contracts, and tax residency reasons an informal setup can't cover. I structure the entity, navigate the regulatory steps, and connect you to the licensed counsel and accountants who take it from there.",
+          "Once a Chinese manufacturer has real traction in Israel, the next step is usually a local entity — for banking, contracts, and tax residency reasons an informal setup can't cover. I structure the entity, navigate the regulatory steps, and connect you to the licensed counsel and accountants who handle the legal and tax work. I also cover what they don't: a local representative who can sit across the table and speak the language, office setup, hiring, and the daily operational problems — vendor contracts, local data, and contact infrastructure — that come with running a real presence, not just registering one.",
       },
     ],
     contact: {
@@ -80,12 +80,12 @@ const COPY: Record<Lang, Content> = {
   zh: {
     brand: "Chaya Kong",
     hero: {
-      headline: "供应链的另一端,是一个黑箱。",
+      headline: "你的供应链,另一端是黑箱。",
       subhead:
-        "我在中国制造商和以色列买家之间做直接对接——谈判、定价、账期、质量管控,每一步都有数据支持,让采购决策有据可依。",
+        "我在中国制造商和以色列买家之间做直接对接——谈判、定价、账期、质量管控,以及在以色列落地所需的日常运营,每一步都有数据支持。",
       moat: [
-        "母语普通话与粤语",
-        "香港普通法法律背景",
+        "母语英语、普通话与粤语",
+        "香港普通法执业律师经验",
         "希伯来语流利",
         "以色列企业内部运营经验",
       ],
@@ -105,7 +105,7 @@ const COPY: Record<Lang, Content> = {
       {
         heading: "何时该设立子公司",
         paragraph:
-          "当中国制造商在以色列站稳脚跟,下一步通常是设立本地实体——银行开户、合同签署、税务居民身份,非正式安排解决不了这些问题。我负责结构搭建、走通监管流程,并为你对接持牌律师和会计师,后续交由他们处理。",
+          "当中国制造商在以色列站稳脚跟,下一步通常是设立本地实体——银行开户、合同签署、税务居民身份,非正式安排解决不了这些问题。我负责结构搭建、走通监管流程,并为你对接持牌律师和会计师,处理法律和税务事宜。律师和会计师管不到的部分,我来补上:能代表你出面、多语言沟通的本地负责人,办公室与团队搭建,以及日常运营中的实际问题——供应商合同、本地数据与人脉网络——这些才是真正把公司经营起来,而不只是把它注册下来。",
       },
     ],
     contact: {
@@ -120,10 +120,10 @@ const COPY: Record<Lang, Content> = {
     hero: {
       headline: "הצד השני של שרשרת האספקה שלך הוא קופסה שחורה.",
       subhead:
-        "אני מהווה את הממשק העסקי בין יצרנים סיניים לקונים ישראליים - משא ומתן, תמחור, תנאי תשלום ובקרת איכות, עם הנתונים שעומדים מאחורי כל החלטת רכש.",
+        "אני מהווה את הממשק העסקי והתפעולי בין יצרנים סיניים לקונים ישראליים - משא ומתן, תמחור, תנאי תשלום, בקרת איכות והתפעול השוטף הנדרש לנוכחות בישראל, עם הנתונים שעומדים מאחורי כל החלטה.",
       moat: [
-        "מנדרינית וקנטונזית ברמת שפת אם",
-        "הכשרה משפטית ב-common law בהונג קונג",
+        "אנגלית, מנדרינית וקנטונזית ברמת שפת אם",
+        "ניסיון כעורכת דין במשפט המקובל בהונג קונג",
         "עברית שוטפת",
         "ניסיון תפעולי בתוך חברות ישראליות",
       ],
@@ -143,7 +143,7 @@ const COPY: Record<Lang, Content> = {
       {
         heading: "מתי מקימים חברת בת",
         paragraph:
-          "כשליצרן סיני יש כבר אחיזה אמיתית בשוק הישראלי, השלב הבא הוא בדרך כלל הקמת ישות משפטית מקומית - לצורך פעילות בנקאית, חוזים ותושבות מס, דברים שהסדר לא רשמי לא פותר. אני מבנה את ההקמה, מנווטת את התהליך הרגולטורי, ומחברת אתכם לעורכי דין ורואי חשבון מוסמכים שממשיכים מכאן.",
+          "כשליצרן סיני יש כבר אחיזה אמיתית בשוק הישראלי, השלב הבא הוא בדרך כלל הקמת ישות משפטית מקומית - לצורך פעילות בנקאית, חוזים ותושבות מס, דברים שהסדר לא רשמי לא פותר. אני מבנה את ההקמה, מנווטת את התהליך הרגולטורי, ומחברת אתכם לעורכי דין ורואי חשבון מוסמכים שמטפלים בצד המשפטי והמס. את מה שהם לא מכסים אני משלימה: נציג מקומי שיודע לייצג אתכם ולדבר בכמה שפות, הקמת משרד וגיוס עובדים, והבעיות התפעוליות היומיומיות - התקשרויות מול ספקים, איסוף נתונים מקומי ובניית רשת קשרים - שהופכות רישום חברה לפעילות אמיתית בשטח.",
       },
     ],
     contact: {
