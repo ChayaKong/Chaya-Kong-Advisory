@@ -52,7 +52,10 @@ working with China.
 - HE: professional, no fluff.
 
 ## Visual
-Navy and white. No stock photos. Type-led.
+Navy and white. No stock photos. Type-led. One exception: a small circular
+headshot of Chaya in the hero section, next to the headline (added
+2026-08-04, confirmed with Chaya) - personal photo, not stock, and kept
+small so the page stays type-led everywhere else.
 
 ## Structure (fixed)
 /, /about, /services, /contact. No new routes without asking.
@@ -74,6 +77,9 @@ Navy and white. No stock photos. Type-led.
   - still scoped to the existing manufacturer/subsidiary audience, no
   investor-audience language (see out-of-scope line above, confirmed with
   Chaya 2026-08-04 not to widen to investment-scouting audiences).
+- 2026-08-04: added a personal headshot to the hero section (public/chaya-kong.jpg),
+  an exception to "Type-led" - confirmed with Chaya; small circular photo
+  next to the headline only, not used elsewhere on the page.
 
 ## Voice
 - Direct, concise, zero small talk. Front-load context in one line, then

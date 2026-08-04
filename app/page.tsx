@@ -204,6 +204,13 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-5xl gap-10 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
         <div>
+          <img
+            src="/chaya-kong.jpg"
+            alt="Chaya Kong"
+            width={80}
+            height={80}
+            className="mb-6 h-20 w-20 rounded-full object-cover"
+          />
           <h1 className="text-3xl font-semibold leading-tight tracking-tight text-navy md:text-4xl">
             {t.hero.headline}
           </h1>
