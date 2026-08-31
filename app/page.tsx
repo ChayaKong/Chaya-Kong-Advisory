@@ -22,6 +22,10 @@ interface Content {
     cta: string;
   };
   problems: Problem[];
+  track: {
+    heading: string;
+    items: string[];
+  };
   contact: {
     heading: string;
     line: string;
@@ -70,6 +74,14 @@ const COPY: Record<Lang, Content> = {
           "Once a Chinese manufacturer has real traction in Israel, the next step is usually a local entity — for banking, contracts, and tax residency reasons an informal setup can't cover. I structure the entity, navigate the regulatory steps, and connect you to the licensed counsel and accountants who handle the legal and tax work. I also cover what they don't: a local representative who can sit across the table and speak the language, office setup, hiring, and the daily operational problems — vendor contracts, local data, and contact infrastructure — that come with running a real presence, not just registering one.",
       },
     ],
+    track: {
+      heading: "Track record",
+      items: [
+        "Operating experience inside Israeli companies, not just advisory work from outside — the day-to-day market fluency that makes a Hebrew and Mandarin negotiation actually land.",
+        "Renegotiated terms across a full Chinese supplier portfolio in Mandarin — pricing, payment terms, MOQs, lead times, consignment — and built the inventory-forecasting models that supported procurement decisions through a period of record sales.",
+        "Structured Israeli entity setup and banking navigation for Chinese companies, coordinating directly with local counsel, accountants, and banks through to a working local presence.",
+      ],
+    },
     contact: {
       heading: "Get in touch",
       line: "The fastest way to reach me is LinkedIn or WeChat.",
@@ -108,6 +120,14 @@ const COPY: Record<Lang, Content> = {
           "当中国制造商在以色列站稳脚跟,下一步通常是设立本地实体——银行开户、合同签署、税务居民身份,非正式安排解决不了这些问题。我负责结构搭建、走通监管流程,并为你对接持牌律师和会计师,处理法律和税务事宜。律师和会计师管不到的部分,我来补上:能代表你出面、多语言沟通的本地负责人,办公室与团队搭建,以及日常运营中的实际问题——供应商合同、本地数据与人脉网络——这些才是真正把公司经营起来,而不只是把它注册下来。",
       },
     ],
+    track: {
+      heading: "过往经验",
+      items: [
+        "深耕以色列企业内部,不只是站在外部提供咨询——这份市场敏感度,是希伯来语和普通话谈判真正落地的关键。",
+        "用普通话与整个供应商体系重新谈判条款——价格、账期、起订量、交期、寄售安排——并搭建支持采购决策的库存预测模型,期间公司销售创下新高。",
+        "为在以色列设立实体的中国企业搭建公司架构、走通银行开户流程,并直接对接当地律师、会计师与银行,推进到实际落地运营。",
+      ],
+    },
     contact: {
       heading: "联系我",
       line: "最快联系我的方式是领英或微信。",
@@ -146,6 +166,14 @@ const COPY: Record<Lang, Content> = {
           "כשליצרן סיני יש כבר אחיזה אמיתית בשוק הישראלי, השלב הבא הוא בדרך כלל הקמת ישות משפטית מקומית - לצורך פעילות בנקאית, חוזים ותושבות מס, דברים שהסדר לא רשמי לא פותר. אני מבנה את ההקמה, מנווטת את התהליך הרגולטורי, ומחברת אתכם לעורכי דין ורואי חשבון מוסמכים שמטפלים בצד המשפטי והמס. את מה שהם לא מכסים אני משלימה: נציג מקומי שיודע לייצג אתכם ולדבר בכמה שפות, הקמת משרד וגיוס עובדים, והבעיות התפעוליות היומיומיות - התקשרויות מול ספקים, איסוף נתונים מקומי ובניית רשת קשרים - שהופכות רישום חברה לפעילות אמיתית בשטח.",
       },
     ],
+    track: {
+      heading: "ניסיון מוכח",
+      items: [
+        "ניסיון תפעולי בפועל בתוך חברות ישראליות, לא רק ייעוץ מבחוץ - ההיכרות היומיומית עם השוק שהופכת משא ומתן בעברית ובמנדרינית לאפקטיבי באמת.",
+        "ניהול משא ומתן מחדש על תנאים מול מערך ספקים סיני שלם, במנדרינית - מחיר, תנאי תשלום, כמות מינימום להזמנה, זמני אספקה, תנאי מסחר בקונסיגנציה - ובניית מודלים לחיזוי מלאי שתמכו בהחלטות הרכש בתקופה שבה החברה שברה שיא מכירות.",
+        "בניית מבנה ההתאגדות והליך פתיחת חשבון בנק עבור חברות סיניות שמקימות פעילות בישראל, תוך תיאום ישיר מול עורכי דין, רואי חשבון ובנקים מקומיים, עד להקמת נוכחות מקומית פעילה.",
+      ],
+    },
     contact: {
       heading: "ליצירת קשר",
       line: "הדרך המהירה ביותר ליצור איתי קשר היא לינקדאין או וויצ'אט.",
@@ -261,6 +289,24 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-navy/10 bg-navy/5">
+        <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
+          <h2 className="text-lg font-semibold text-navy">{t.track.heading}</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            {t.track.items.map((item, i) => (
+              <div key={item}>
+                <span className="text-xs font-medium tracking-widest text-navy/40">
+                  0{i + 1}
+                </span>
+                <p className="mt-3 text-sm leading-relaxed text-navy/80">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
