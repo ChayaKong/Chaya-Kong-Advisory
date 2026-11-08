@@ -1,0 +1,48 @@
+# Supabase free-tier projects are paused after 7 days without activity.
+# This workflow makes a real database read every 3 days so the project
+# never reaches that threshold. It only uses the publishable (public) key,
+# which is already shipped to browsers, so no privileged credential is exposed.
+name: Supabase keepalive
+
+on:
+  schedule:
+    # Every 3 days at 06:00 UTC. 3 days leaves a safety margin: if one run
+    # fails or GitHub delays it, the next run still lands inside the 7-day window.
+    - cron: "0 6 */3 * *"
+  # Lets you run it manually from the Actions tab to test it.
+  workflow_dispatch:
+
+permissions:
+  # Needed only for the "re-enable" step below.
+  actions: write
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query the keepalive table
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          # We select from a real table (not just a health endpoint) because
+          # an actual Postgres query is what reliably counts as activity.
+          # --fail makes curl exit non-zero on HTTP errors, so the run turns
+          # red and GitHub emails you if the ping ever stops working.
+          curl --fail --silent --show-error \
+            "$SUPABASE_URL/rest/v1/keepalive?select=id&limit=1" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY"
+          echo
+          echo "Supabase responded OK"
+
+      - name: Keep this scheduled workflow from being auto-disabled
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # GitHub disables scheduled workflows in public repos after 60 days
+          # with no commits. A static marketing site can easily go 60 days
+          # untouched, which would silently stop the keepalive. Calling the
+          # "enable" API resets that inactivity clock without making commits.
+          gh api -X PUT "repos/${{ github.repository }}/actions/workflows/supabase-keepalive.yml/enable"
