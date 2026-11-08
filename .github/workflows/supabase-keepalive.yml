@@ -1,5 +1,5 @@
 # Supabase free-tier projects are paused after 7 days without activity.
-# This workflow makes a real database read every 3 days so the project
+# This workflow makes a real database query every 3 days so the project
 # never reaches that threshold. It only uses the publishable (public) key,
 # which is already shipped to browsers, so no privileged credential is exposed.
 name: Supabase keepalive
@@ -21,17 +21,19 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Query the keepalive table
+      - name: Make a real database query
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
         run: |
-          # We select from a real table (not just a health endpoint) because
-          # an actual Postgres query is what reliably counts as activity.
+          # Listing storage buckets makes Supabase run a query against the
+          # storage.buckets table in Postgres. A real database query is what
+          # reliably counts as activity (a bare health check may not), and
+          # this works without creating any table of our own.
           # --fail makes curl exit non-zero on HTTP errors, so the run turns
           # red and GitHub emails you if the ping ever stops working.
           curl --fail --silent --show-error \
-            "$SUPABASE_URL/rest/v1/keepalive?select=id&limit=1" \
+            "$SUPABASE_URL/storage/v1/bucket" \
             -H "apikey: $SUPABASE_KEY" \
             -H "Authorization: Bearer $SUPABASE_KEY"
           echo
